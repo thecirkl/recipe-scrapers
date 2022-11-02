@@ -44,7 +44,7 @@ class TestTastelineScraper(ScraperTest):
                 "1 msk tomatpuré",
                 "0.5 tsk torkad timjan",
                 "1 st lagerblad",
-                "1 vitlök",
+                "1 klyfta vitlök",
                 "8 st steklök",
                 "1 msk mat- och baksmör",
                 "0.5 dl vatten",

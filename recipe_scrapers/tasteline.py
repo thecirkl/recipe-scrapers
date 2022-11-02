@@ -7,7 +7,11 @@ def get_ingredient_text(e):
     qty = e.find("span", {"class": "Ingredient-quantity"})
     if qty is not None:
         amount = qty['data-quantity'] or ''
-        unit = qty['data-unit'] or ''
+        unitname = e.find("span", {"class", 'Ingredient-unitName'})
+        unit = None
+        if unitname:
+            unit = unitname['data-singular-name']
+        unit = unit or qty['data-unit'] or ''
         t = (amount + ' ' + unit).strip()
     iname = e.find("span", {"class", "Ingredient-name"})
     if iname is not None:
