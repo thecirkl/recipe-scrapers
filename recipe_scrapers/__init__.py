@@ -187,6 +187,7 @@ from .sunbasket import SunBasket
 from .sundpaabudget import SundPaaBudget
 from .sweetcsdesigns import SweetCsDesigns
 from .sweetpeasandsaffron import SweetPeasAndSaffron
+from .tasteline import Tasteline
 from .tasteofhome import TasteOfHome
 from .tastesbetterfromscratch import TastesBetterFromScratch
 from .tastesoflizzyt import TastesOfLizzyT
@@ -421,6 +422,7 @@ SCRAPERS = {
     SweetCsDesigns.host(): SweetCsDesigns,
     SweetPeasAndSaffron.host(): SweetPeasAndSaffron,
     TasteOfHome.host(): TasteOfHome,
+    Tasteline.host(): Tasteline,
     TastesBetterFromScratch.host(): TastesBetterFromScratch,
     TastesOfLizzyT.host(): TastesOfLizzyT,
     Tasty.host(): Tasty,
