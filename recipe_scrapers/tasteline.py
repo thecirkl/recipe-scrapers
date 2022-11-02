@@ -39,7 +39,7 @@ class Tasteline(AbstractScraper):
         return self.schema.image()
 
     def ingredients(self):
-        ingredient_elements = self.soup.findAll("li", {"class": "Ingredient"})
+        ingredient_elements = self.soup.findAll("li", {"class": "Ingredient u-contents"})
         return [
             get_ingredient_text(element) for element in ingredient_elements if element.get_text()
         ]
